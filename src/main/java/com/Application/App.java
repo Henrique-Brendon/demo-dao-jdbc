@@ -1,8 +1,29 @@
 package com.Application;
 
-public class App {
+import java.sql.Connection;
+import java.util.Date;
 
-    public static void main( String[] args ){
-        
+import com.jdbc.db.DB;
+import com.model.dao.DaoFactory;
+import com.model.dao.SellerDao;
+import com.model.entities.Department;
+import com.model.entities.Seller;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+
+    public static void main( String[] args )
+    {
+        Department obj = new Department(1, "books");
+
+        Seller seller = new Seller(21, "bob", "bob@gmail.com", new Date(), 3000.0, obj);
+
+        SellerDao sellerDao = new DaoFactory().creatSellerDao();
+        System.out.println(seller);
+
     }
 }

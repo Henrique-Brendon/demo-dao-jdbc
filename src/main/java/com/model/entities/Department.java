@@ -1,8 +1,6 @@
 package com.model.entities;
 
 import java.io.Serializable;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 
 public class Department implements Serializable{
 
