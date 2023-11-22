@@ -1,6 +1,8 @@
 package com.model.entities;
 
 import java.io.Serializable;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.Date;
 
 public class Seller  implements Serializable{
@@ -107,6 +109,5 @@ public class Seller  implements Serializable{
         return true;
     }
 
-    
 }
 
